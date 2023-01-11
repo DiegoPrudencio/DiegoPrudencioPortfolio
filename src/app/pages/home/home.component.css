@@ -1,0 +1,155 @@
+/* GENERAL */
+
+html {
+    background-color: var(--background-theme);
+
+    /* cores de texto */
+    --text-title: #42446E;
+    --color-content: #666666;
+
+    /* cores de fundo */
+    /* --background-theme: #F5F5F5;
+    --background-box: #FFFFFF;
+
+    --bg-indigo: #6366f1;
+    --bg-grey-light: #f5f5f5; */
+
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+.colorTitle1 {
+    color: var(--color-content)
+}
+
+.colorTitle2 {
+    color: var(--text-title);
+}
+
+.textTitle {
+    color: var(--color-content);
+}
+
+.fontSize1 {
+    font-size: 48px;
+}
+
+.fontSize2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fontSize3 {
+    font-size: 28px;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+/* PRESENTATION FIELD */
+
+.divHello {
+    padding-top: 230px; 
+    text-align: start;
+}
+
+.imageHello {
+    width: 50px;
+}
+
+.name {
+    background-image: linear-gradient(to bottom, #E70FAA, #00C0FD);
+    /* background-image: linear-gradient(to bottom, #ad8d67, #272724); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.divTextAlign {
+    text-align: end;
+}
+
+.profilePhoto {
+    margin-top: 150px;
+    width: 400px;
+    background: linear-gradient(white, white) padding-box,
+                /* linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet) border-box; */
+                linear-gradient(to bottom right, #E70FAA, #00C0FD) border-box;
+                /* linear-gradient(to bottom right, #272724, #ad8d67) border-box; */
+    border-radius: 50em;
+    border: 6px solid transparent;
+
+}
+
+/* TECH FIELD */
+
+.divTitle3 {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.techImages {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iconFigure {
+    width: 70px;
+}
+
+/* PROJECT FIELD */
+
+.divTitle4 {
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.block {
+    margin-bottom: 50px;
+    border: 0.5px solid lightgray;
+    border-radius: 20px;
+    background-color: var(--background-box);
+    -webkit-box-shadow: 9px 7px 5px rgba(211, 211, 211);
+    -moz-box-shadow:    9px 7px 5px rgba(211, 211, 211);
+    box-shadow:         9px 7px 5px rgba(211, 211, 211); 
+    height: 580px;
+}
+
+.marginProject {
+    padding: 15px 30px 0px 30px;
+    text-align: justify;
+}
+
+.titleProject {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.projectFigure {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.iconLink {
+    margin: 13px 10px 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.iconLink2 {
+   margin-left: 25px;
+   margin-bottom: 20px;
+}
+
+.divMoreOption {
+    text-align: end;
+    margin-right: 120px;
+}
+
+.moreOption {
+    color: var(--color-content);
+}
