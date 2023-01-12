@@ -27,23 +27,6 @@ html {
     color: var(--text-title);
 }
 
-.textTitle {
-    color: var(--color-content);
-}
-
-.fontSize1 {
-    font-size: 48px;
-}
-
-.fontSize2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.fontSize3 {
-    font-size: 28px;
-}
-
 .textDecoration {
     text-decoration: none;
 }
@@ -81,4 +64,9 @@ html {
 
 .align {
     text-align: end;
+}
+
+.smallImage {
+    width: 18px;
+    margin-right: 10px;
 }

@@ -1,0 +1,73 @@
+/* GENERAL */
+
+* {
+    background-color: var(--background-theme);
+
+    /* cores de texto */
+    --text-title: #42446E;
+    --color-content: #666666;
+
+    /* cores de fundo */
+    /* --background-theme: #F5F5F5;
+    --background-box: #FFFFFF;
+
+    --bg-indigo: #6366f1;
+    --bg-grey-light: #f5f5f5; */
+}
+
+.colorTitle1 {
+    color: var(--color-content)
+}
+
+.colorTitle2 {
+    color: var(--text-title);
+}
+
+.fontSize2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fontSize4 {
+    font-size: 20px;
+}
+
+/* ABOUT */
+
+.divBox{
+    margin: 100px 300px 30px 60px;
+}
+
+.marginTitle {
+    margin-bottom: 40px;
+}
+
+.decor {
+    text-align: justify;
+    margin-right: 250px;
+}
+
+.decor2 {
+    font-weight: bold;
+    color: var(--color-content)
+}
+
+.locationImage {
+    width: 18px;
+    margin: 0px 2px 0px 30px;
+}
+
+.calendarImage {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.secondPart {
+    text-align: end;
+    margin-right: 250px;
+}
+
+.line {
+    color: lightgray;
+    margin: 15px 0px 45px 0px;
+}

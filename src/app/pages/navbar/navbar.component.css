@@ -20,7 +20,8 @@ html {
 }
 
 .colorTitle1 {
-    color: var(--color-content)
+    color: var(--color-content);
+    margin-right: 30px;
 }
 
 /*  NAVBAR  */
@@ -34,17 +35,18 @@ html {
 
 .imagePage {
     width: 28px;
+    text-align: end;
 }
 
 .divPage {
     margin: 8px 10px 0px 0px;
-
 }
 
 .divMenuOpition {
-    margin-left: 575px;
+    justify-content: end;
+    margin-right: 53px;
 } 
 
 .divMenuLogo {
-    margin-left: 100px;
+    margin-left: 60px;
 }
