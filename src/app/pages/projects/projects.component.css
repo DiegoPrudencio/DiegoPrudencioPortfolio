@@ -28,10 +28,6 @@
 
 }
 
-.fontSize1 {
-    font-size: 48px;
-}
-
 .fontSize2 {
     font-size: 40px;
     font-weight: bold;
@@ -39,10 +35,6 @@
 
 .fontSize3 {
     font-size: 28px;
-}
-
-.textDecoration {
-    text-decoration: none;
 }
 
 /* PROJECT FIELD */
