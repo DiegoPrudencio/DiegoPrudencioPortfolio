@@ -1,0 +1,77 @@
+/* GENERAL */
+
+* {
+    background-color: var(--background-theme);
+
+    /* cores de texto */
+    --text-title: #42446E;
+    --color-content: #666666;
+
+    /* cores de fundo */
+    /* --background-theme: #F5F5F5;
+    --background-box: #FFFFFF;
+
+    --bg-indigo: #6366f1;
+    --bg-grey-light: #f5f5f5; */
+
+    /* margin: 0%;
+    padding: 0%;
+    border: 0%; */
+}
+
+.colorTitle1 {
+    color: var(--color-content);
+}
+
+.colorTitle2 {
+    color: var(--text-title);
+
+}
+
+.fontSize1 {
+    font-size: 48px;
+}
+
+.fontSize2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fontSize3 {
+    font-size: 28px;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+/* CONTACT FIELD */
+
+.divTitle4 {
+    margin: 100px 0px 0px 60px;
+    text-align: start;
+    margin-bottom: 70px;
+}
+
+/* FORM FIELD */
+
+.formDiv {
+    margin: 50px 600px 30px 60px;
+}
+
+.tamanhoText {
+    font-size: 19px;
+    margin: 10px 0px 20px 0px;
+}
+
+.margin {
+    margin: 5px 0px 15px 0px;
+}
+
+.inputSize {
+    height: 35px;
+}
+
+.marginValidation {
+    margin: 0px 0px 25px 0px;
+}

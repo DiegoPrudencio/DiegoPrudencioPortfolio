@@ -1,1 +1,74 @@
-<p>contact works!</p>
+<div class="divTitle4">
+    <p class="colorTitle2 fontSize2">Contacts</p>
+    <!-- <p class="colorTitle1 fontSize3">Things Ive built so far</p> -->
+</div>
+<div class="formDiv">
+    <form [formGroup]="formulario">
+
+        <!-- NAME FIELD -->
+        <div>
+            <label class="form-label m-0 p-0 tamanhoText" for="idName">Name:</label>
+            <input class="form-control margin inputSize" type="text" id="idName" formControlName="name">
+        </div>
+
+        <!-- NAME FIELD VALIDATION -->
+        <div *ngIf="formulario.get('name')?.errors?.['required'] && formulario.get('name')?.touched" class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+
+        <!-- PHONE NUMBER FIELD -->
+        <div>
+            <label class="form-label m-0 p-0 tamanhoText" for="idPhoneNumber">Phone number:</label>
+            <input class="form-control margin inputSize" type="text" id="idPhoneNumber" formControlName="phoneNumber"
+                placeholder="(DDD) + número">
+        </div>
+
+        <!-- PHONE NUMBER FIELD VALIDATION -->
+        <div *ngIf="formulario.get('phoneNumber')?.errors?.['required'] && formulario.get('phoneNumber')?.touched" class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+        <div *ngIf="formulario.get('phoneNumber')?.errors?.['minlength'] && formulario.get('phoneNumber')?.touched" class="marginValidation">
+            <p class="text-danger">Minimum length 11 characters</p>
+        </div>
+
+        <!-- EMAIL FIELD -->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idEmail">Email</label>
+            <input class="form-control margin inputSize" type="text" id="idEmail" formControlName="email">
+        </div>
+
+        <!-- EMAIL FIELD VALIDATION -->
+        <div *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched" class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+        <div *ngIf="formulario.get('email')?.errors?.['email'] && formulario.get('email')?.touched" class="marginValidation">
+            <p class="text-danger">This is not an email</p>
+        </div>
+
+        <!-- SUBJECT FIELD -->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idSubject">Subject:</label>
+            <input class="form-control margin inputSize" type="text" id="idSubject" formControlName="subject">
+        </div>
+
+        <!-- SUBJECT FIELD VALIDATION -->
+        <div *ngIf="formulario.get('subject')?.errors?.['required'] && formulario.get('subject')?.touched" class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+
+        <!-- TEXT FIELD-->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idMessage">Your message here:</label>
+            <!-- <input class="form-control margin textArea" type="text" id="idMessage" formControlName="message"> -->
+            <textarea class="form-control margin" formControlName="message" id="idMessage" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- TEXT FIELD VALIDATION -->
+        <div *ngIf="formulario.get('message')?.errors?.['required'] && formulario.get('message')?.touched" class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+
+        <button (click)="send()" [disabled]="!formulario.valid">Cadastrar</button>
+
+    </form>
+</div>
