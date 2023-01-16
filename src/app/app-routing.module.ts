@@ -10,7 +10,7 @@ import { TechstackComponent } from './pages/techstack/techstack.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' }, 
-  // {path: '/', component: LoginComponent},
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'techstack', component: TechstackComponent},
