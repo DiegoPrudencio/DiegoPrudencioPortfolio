@@ -10,9 +10,9 @@ import { Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  formulario: FormGroup; 
+  formulario: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { 
+  constructor(private formBuilder: FormBuilder) {
     this.formulario = this.formBuilder.group({
       name: ['', [Validators.required]],
       phoneNumber: ['', [Validators.required, Validators.minLength(11)]],
@@ -22,11 +22,22 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  send() {
-    console.log(this.formulario.get('nome')?.value);
-  }
-
   ngOnInit(): void {
   }
+
+  send() {
+    console.log(this.formulario.get('name')?.value);
+    console.log(this.formulario.get('phoneNumber')?.value);
+    console.log(this.formulario.get('email')?.value);
+    console.log(this.formulario.get('subject')?.value);
+    console.log(this.formulario.get('message')?.value);
+
+
+  }
+
+  // clearInput() {
+  //   // this.userID = "";
+  //   // this.userPassword = "";
+  // }
 
 }

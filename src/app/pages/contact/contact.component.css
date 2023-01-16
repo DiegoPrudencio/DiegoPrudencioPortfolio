@@ -75,3 +75,7 @@
 .marginValidation {
     margin: 0px 0px 25px 0px;
 }
+
+.positionBtn {
+    text-align: end;
+}

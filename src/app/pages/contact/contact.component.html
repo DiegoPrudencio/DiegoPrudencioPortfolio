@@ -3,7 +3,7 @@
     <!-- <p class="colorTitle1 fontSize3">Things Ive built so far</p> -->
 </div>
 <div class="formDiv">
-    <form [formGroup]="formulario">
+    <form [formGroup]="formulario" action="https://formspree.io/f/xpzewpwv" method="POST">
 
         <!-- NAME FIELD -->
         <div>
@@ -12,7 +12,8 @@
         </div>
 
         <!-- NAME FIELD VALIDATION -->
-        <div *ngIf="formulario.get('name')?.errors?.['required'] && formulario.get('name')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('name')?.errors?.['required'] && formulario.get('name')?.touched"
+            class="marginValidation">
             <p class="text-danger">Required field</p>
         </div>
 
@@ -24,10 +25,12 @@
         </div>
 
         <!-- PHONE NUMBER FIELD VALIDATION -->
-        <div *ngIf="formulario.get('phoneNumber')?.errors?.['required'] && formulario.get('phoneNumber')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('phoneNumber')?.errors?.['required'] && formulario.get('phoneNumber')?.touched"
+            class="marginValidation">
             <p class="text-danger">Required field</p>
         </div>
-        <div *ngIf="formulario.get('phoneNumber')?.errors?.['minlength'] && formulario.get('phoneNumber')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('phoneNumber')?.errors?.['minlength'] && formulario.get('phoneNumber')?.touched"
+            class="marginValidation">
             <p class="text-danger">Minimum length 11 characters</p>
         </div>
 
@@ -38,10 +41,12 @@
         </div>
 
         <!-- EMAIL FIELD VALIDATION -->
-        <div *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched"
+            class="marginValidation">
             <p class="text-danger">Required field</p>
         </div>
-        <div *ngIf="formulario.get('email')?.errors?.['email'] && formulario.get('email')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('email')?.errors?.['email'] && formulario.get('email')?.touched"
+            class="marginValidation">
             <p class="text-danger">This is not an email</p>
         </div>
 
@@ -52,7 +57,8 @@
         </div>
 
         <!-- SUBJECT FIELD VALIDATION -->
-        <div *ngIf="formulario.get('subject')?.errors?.['required'] && formulario.get('subject')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('subject')?.errors?.['required'] && formulario.get('subject')?.touched"
+            class="marginValidation">
             <p class="text-danger">Required field</p>
         </div>
 
@@ -60,15 +66,18 @@
         <div class="pb-1 input-group-sm">
             <label class="form-label m-0 p-0 tamanhoText" for="idMessage">Your message here:</label>
             <!-- <input class="form-control margin textArea" type="text" id="idMessage" formControlName="message"> -->
-            <textarea class="form-control margin" formControlName="message" id="idMessage" cols="30" rows="10"></textarea>
+            <textarea class="form-control margin" formControlName="message" id="idMessage" cols="30"
+                rows="10"></textarea>
         </div>
 
         <!-- TEXT FIELD VALIDATION -->
-        <div *ngIf="formulario.get('message')?.errors?.['required'] && formulario.get('message')?.touched" class="marginValidation">
+        <div *ngIf="formulario.get('message')?.errors?.['required'] && formulario.get('message')?.touched"
+            class="marginValidation">
             <p class="text-danger">Required field</p>
         </div>
-
-        <button (click)="send()" [disabled]="!formulario.valid">Cadastrar</button>
-
+        <div class="positionBtn">
+            <button (click)="send()" class="btn btn-outline-dark btn-lg"
+                [disabled]="!formulario.valid">Submit</button>
+        </div>
     </form>
 </div>
