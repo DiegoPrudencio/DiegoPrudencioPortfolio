@@ -12,6 +12,7 @@ import { TechstackComponent } from './pages/techstack/techstack.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { AuthGuard } from './guards/auth-guard.service';
 
 
 
@@ -33,7 +34,7 @@ import { FooterComponent } from './pages/footer/footer.component';
     ReactiveFormsModule,
     NgbModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent,
   NavbarComponent]
 })
