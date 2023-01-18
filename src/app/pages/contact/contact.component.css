@@ -98,6 +98,19 @@
     margin-left: 64px;
 }
 
+@media (max-width: 1024px) {
+
+    .emailMargin {
+        margin-left: 0px;
+    }
+
+
+    .formDiv {
+        margin: 50px 50px 30px 60px;
+        padding-right: 0px;
+    }
+}
+
 @media (max-width: 650px) {
 
     .emailMargin {

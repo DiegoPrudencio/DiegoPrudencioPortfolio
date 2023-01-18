@@ -93,3 +93,18 @@
 .moreOption {
     color: var(--color-content);
 }
+
+@media (max-width: 1124px) {
+
+    .block {
+        height: 900px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .block {
+        height: 600px;
+    }
+
+}

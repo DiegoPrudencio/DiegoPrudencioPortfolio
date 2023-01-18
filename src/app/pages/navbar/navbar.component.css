@@ -51,20 +51,31 @@ html {
     margin-left: 60px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1024px) {
+    .navBarScreen {
+        text-align: end;
+    }
 
     .divMenuOpition {
-        justify-content: end;
-        margin-right: 50px;
-    } 
-
-    .divBox{
-        margin: 100px 50px 30px 60px;
+        margin: 0%;
     }
 
-    .secondPart {
-        text-align: start;
-        margin-right: 0px;
+    .imagePage {
+       margin-right: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navBarScreen {
+        text-align: end;
     }
 
+    .divMenuOpition {
+        margin: 0%;
+    }
+
+    .imagePage {
+       margin-right: 30px;
+    }
 }
