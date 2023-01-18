@@ -71,3 +71,20 @@
     color: lightgray;
     margin: 15px 0px 45px 0px;
 }
+
+@media (max-width: 650px) {
+
+    .decor {
+        margin-right: 0px;
+    }
+
+    .divBox{
+        margin: 100px 50px 30px 60px;
+    }
+
+    .secondPart {
+        text-align: start;
+        margin-right: 0px;
+    }
+
+}

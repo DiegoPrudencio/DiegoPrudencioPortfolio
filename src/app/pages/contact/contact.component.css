@@ -90,26 +90,24 @@
     text-decoration: none;
 }
 
-.extra {
+.directContact {
     margin: 100px 0px 0px 60px;
 }
 
-.div1 {
+.emailMargin {
     margin-left: 64px;
 }
 
 @media (max-width: 650px) {
 
+    .emailMargin {
+        margin-left: 0px;
+    }
+
+
     .formDiv {
         margin: 50px 50px 30px 60px;
         padding-right: 0px;
     }
-
-    /* .colorLights {
-        width: auto;
-        height: 100%;
-        
-    } */
-
 
 }
