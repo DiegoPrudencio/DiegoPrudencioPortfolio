@@ -2,6 +2,22 @@
     <p class="colorTitle2 fontSize2">Contacts</p>
     <!-- <p class="colorTitle1 fontSize3">Things Ive built so far</p> -->
 </div>
+
+<div class="extra">
+    <div class="row">
+        <div class="col-sm-4">
+            <!-- textDecoration moreOption -->
+            <a class="colorTitle2 textDecoration" href="https://wa.me/5548984333839"><img class="smallImage"
+                    src="./assets/whatsapp.png" alt="WhatsApp">+55 (48) 98433-3839</a>
+        </div>
+        <div class="col-sm-4 div1">
+            <a class="colorTitle2 textDecoration" href="mailto:diegoprudencioo@gmail.com"><img class="smallImage"
+                    src="./assets/email.png" alt="Email">diegoprudencioo@gmail.com</a>
+        </div>
+
+    </div>
+</div>
+
 <div class="formDiv">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <!-- action="https://formspree.io/f/xpzewpwv" method="POST" -->
@@ -77,8 +93,8 @@
         </div>
         <div class="positionBtn">
 
-            <button type="submit" class="btn btn-outline-dark btn-lg"
-                [disabled]="!contactForm.valid" [class.ready]="contactForm.valid">Submit</button>
+            <button type="submit" class="btn btn-outline-dark btn-lg" [disabled]="!contactForm.valid"
+                [class.ready]="contactForm.valid">Submit</button>
             <!-- <button class="btn btn-outline-dark btn-lg" type="submit">Submit</button> (click)="send()" -->
         </div>
     </form>

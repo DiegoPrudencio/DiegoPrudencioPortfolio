@@ -15,7 +15,9 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder
+    // , private contactService: ContactService
+    ) {
 
     this.contactForm = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -39,13 +41,9 @@ export class ContactComponent implements OnInit {
       email: this.contactForm.get('email')?.value,
       subject: this.contactForm.get('subject')?.value,
       message: this.contactForm.get('message')?.value,
-
-      // name: this.contactForm.get('name').value,
-      // email: email,
-      // message: this.contactForm.get('message').value
     })
 
-
+    alert("Still fixing this bug, please send a message on the phone or email!");
 
     // this.contactService.sendEmail(contact).subscribe(res => {
     //   if (res.ok) {

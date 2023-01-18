@@ -79,3 +79,20 @@
 .positionBtn {
     text-align: end;
 }
+
+.smallImage {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+.extra {
+    margin: 100px 0px 0px 60px;
+}
+
+.div1 {
+    margin-left: 64px;
+}
