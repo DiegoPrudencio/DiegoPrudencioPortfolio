@@ -50,3 +50,21 @@ html {
 .divMenuLogo {
     margin-left: 60px;
 }
+
+@media (max-width: 650px) {
+
+    .divMenuOpition {
+        justify-content: end;
+        margin-right: 50px;
+    } 
+
+    .divBox{
+        margin: 100px 50px 30px 60px;
+    }
+
+    .secondPart {
+        text-align: start;
+        margin-right: 0px;
+    }
+
+}
