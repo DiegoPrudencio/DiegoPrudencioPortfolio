@@ -1,59 +1,60 @@
 <!-- TECH STACK FIELD -->
-<div class="divTitle3">
-    <p class="colorTitle2 fontSize2">My Tech Stack</p>
-    <p class="colorTitle1 fontSize3">Technologies I've been working with recently</p>
-</div>
+<section>
+    <div class="divTitle3">
+        <p class="colorTitle2 fontSize2">My Tech Stack</p>
+        <p class="colorTitle1 fontSize3">Technologies I've been working with recently</p>
+    </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/htmlImage.png" alt="html icon">
-            <p class="colorTitle1 fontSize4">HTML 5</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/htmlImage.png" alt="html icon">
+                <p class="colorTitle1 fontSize4">HTML 5</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/cssImage.png" alt="css icon">
+                <p class="colorTitle1 fontSize4">CSS 3</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/javaScriptImage.png" alt="javaScript icon">
+                <p class="colorTitle1 fontSize4">javaScript</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/angular.png" alt="angular icon">
+                <p class="colorTitle1 fontSize4">Angular</p>
+            </div>
         </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/cssImage.png" alt="css icon">
-            <p class="colorTitle1 fontSize4">CSS 3</p>
-        </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/javaScriptImage.png" alt="javaScript icon">
-            <p class="colorTitle1 fontSize4">javaScript</p>
-        </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/angular.png" alt="angular icon">
-            <p class="colorTitle1 fontSize4">Angular</p>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/bootstrapImage.png" alt="bootstrap icon">
+                <p class="colorTitle1 fontSize4">Bootstrap</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/greensockImage.png" alt="greenSock icon">
+                <p class="colorTitle1 fontSize4">GreenSock</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/vsCodeImage.png" alt="vs Code icon">
+                <p class="colorTitle1 fontSize4">VS Code</p>
+            </div>
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/gitImage.png" alt="git icon">
+                <p class="colorTitle1 fontSize4">GIT</p>
+            </div>
         </div>
     </div>
 
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/bootstrapImage.png" alt="bootstrap icon">
-            <p class="colorTitle1 fontSize4">Bootstrap</p>
-        </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/greensockImage.png" alt="greenSock icon">
-            <p class="colorTitle1 fontSize4">GreenSock</p>
-        </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/vsCodeImage.png" alt="vs Code icon">
-            <p class="colorTitle1 fontSize4">VS Code</p>
-        </div>
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/gitImage.png" alt="git icon">
-            <p class="colorTitle1 fontSize4">GIT</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 techImages">
-            <img class="iconFigure" src="./assets/githubDark.png" alt="github icon">
-            <p class="colorTitle1 fontSize4">Github</p>
-        </div>
-        <!-- <div class="col-md-3 techImages">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 techImages">
+                <img class="iconFigure" src="./assets/githubDark.png" alt="github icon">
+                <p class="colorTitle1 fontSize4">Github</p>
+            </div>
+            <!-- <div class="col-md-3 techImages">
             <img class="iconFigure" src="./assets/vsCodeImage.png" alt="vs Code icon">
             <p class="colorTitle1 fontSize4">VS Code</p>
         </div>
@@ -65,5 +66,41 @@
             <img class="iconFigure" src="./assets/githubDark.png" alt="github icon">
             <p class="colorTitle1 fontSize4">Gitub</p>
         </div> -->
+        </div>
     </div>
-</div>
+</section>
+
+<!-- COURSE FIELD -->
+
+<section>
+    <div class="divTitle4">
+        <p class="colorTitle2 fontSize3">Courses</p>
+    </div>
+
+    <table class="table">
+        <thead class="thead-dark header">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Course</th>
+            <th scope="col">Istitution</th>
+            <th scope="col" class="center">Hours</th>
+            <th scope="col" class="center">Date</th>
+            <th scope="col" class="center">Concluído</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let course of courses">
+                <td>{{course.courseNumber}}</td>
+                <td>{{course.courseName}}</td>
+                <td>{{course.courseInstitution}}</td>
+                <td class="center">{{course.courseHours}}</td>
+                <td class="center">{{course.courseDate | date: 'dd/MM/yyyy'}}</td>
+                <td class="center"><div> <div *ngIf="courseConclued; else other_content">
+                    <img class="sinalImage" src="./assets/positiveImage.png" alt="Yes">
+                </div>
+                <ng-template #other_content><img class="sinalImage" src="./assets/negativeImage.png" alt="No"></ng-template></div></td>
+            </tr>
+        </tbody>
+      </table>
+      
+</section>

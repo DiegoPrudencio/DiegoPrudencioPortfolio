@@ -60,3 +60,28 @@
 .iconFigure {
     width: 70px;
 }
+
+/* COURSE FIELD */
+
+.divTitle4 {
+    margin: 70px 0px 50px 100px;
+    text-align: start;
+}
+
+.table {
+    width: 1145px;
+    margin: 50px 100px 50px 100px;
+}
+
+.header {
+    background-color: black;
+    color: lightgray;
+}
+
+.sinalImage {
+    width: 25px;
+}
+
+.center {
+    text-align: center;
+}
