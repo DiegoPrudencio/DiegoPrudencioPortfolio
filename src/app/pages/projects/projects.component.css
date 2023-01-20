@@ -56,6 +56,12 @@
     height: 580px;
 }
 
+.block2 {
+    -webkit-box-shadow: 9px 7px 5px #42446E;
+    -moz-box-shadow:    9px 7px 5px #42446E;
+    box-shadow:         9px 7px 5px #42446E;
+}
+
 .marginProject {
     padding: 15px 30px 0px 30px;
     text-align: justify;
