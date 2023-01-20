@@ -53,39 +53,6 @@
     margin-bottom: 70px;
 }
 
-/* FORM FIELD */
-
-.formDiv {
-    margin: 50px 50px 30px 60px;
-    padding-right: 550px;
-}
-
-.tamanhoText {
-    font-size: 19px;
-    margin: 10px 0px 20px 0px;
-}
-
-.margin {
-    margin: 5px 0px 15px 0px;
-}
-
-.inputSize {
-    height: 35px;
-}
-
-.marginValidation {
-    margin: 0px 0px 25px 0px;
-}
-
-.positionBtn {
-    text-align: end;
-}
-
-.smallImage {
-    width: 18px;
-    margin-right: 10px;
-}
-
 .textDecoration {
     text-decoration: none;
 }
@@ -94,8 +61,9 @@
     margin: 100px 0px 0px 60px;
 }
 
-.emailMargin {
-    margin-left: 64px;
+.smallImage {
+    width: 18px;
+    margin-right: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -104,23 +72,12 @@
         margin-left: 0px;
     }
 
-
-    .formDiv {
-        margin: 50px 50px 30px 60px;
-        padding-right: 0px;
-    }
 }
 
 @media (max-width: 650px) {
 
     .emailMargin {
         margin-left: 0px;
-    }
-
-
-    .formDiv {
-        margin: 50px 50px 30px 60px;
-        padding-right: 0px;
     }
 
 }
