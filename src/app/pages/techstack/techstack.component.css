@@ -64,13 +64,13 @@
 /* COURSE FIELD */
 
 .divTitle4 {
-    margin: 70px 0px 50px 100px;
-    text-align: start;
+    margin: 70px 0px 50px 0px;
+    text-align: center;
 }
 
 .table {
-    width: 1145px;
-    margin: 50px 100px 50px 100px;
+    width: 1060px;
+    margin: 50px 100px 50px 90px;
 }
 
 .header {
@@ -84,4 +84,21 @@
 
 .center {
     text-align: center;
+}
+
+@media (max-width: 1124px) {
+
+    .table {
+        width: 1000px;
+        margin: 50px 10px 50px 10px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .table {
+        width: 350px;
+        margin: 50px 10px 50px 10px;
+    }
+
 }

@@ -74,33 +74,40 @@
 
 <section>
     <div class="divTitle4">
-        <p class="colorTitle2 fontSize3">Courses</p>
+        <p class="colorTitle2 fontSize2">Courses</p>
     </div>
 
-    <table class="table">
-        <thead class="thead-dark header">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Course</th>
-            <th scope="col">Istitution</th>
-            <th scope="col" class="center">Hours</th>
-            <th scope="col" class="center">Date</th>
-            <th scope="col" class="center">Concluído</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let course of courses">
-                <td>{{course.courseNumber}}</td>
-                <td>{{course.courseName}}</td>
-                <td>{{course.courseInstitution}}</td>
-                <td class="center">{{course.courseHours}}</td>
-                <td class="center">{{course.courseDate | date: 'dd/MM/yyyy'}}</td>
-                <td class="center"><div> <div *ngIf="courseConclued; else other_content">
-                    <img class="sinalImage" src="./assets/positiveImage.png" alt="Yes">
-                </div>
-                <ng-template #other_content><img class="sinalImage" src="./assets/negativeImage.png" alt="No"></ng-template></div></td>
-            </tr>
-        </tbody>
-      </table>
-      
+    <div class="table">
+        <table class="table">
+            <thead class="thead-dark header">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Istitution</th>
+                    <th scope="col" class="center">Hours</th>
+                    <th scope="col" class="center">Date</th>
+                    <th scope="col" class="center">Concluído</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let course of courses">
+                    <td>{{course.courseNumber}}</td>
+                    <td>{{course.courseName}}</td>
+                    <td>{{course.courseInstitution}}</td>
+                    <td class="center">{{course.courseHours}}</td>
+                    <td class="center">{{course.courseDate | date: 'dd/MM/yyyy'}}</td>
+                    <td class="center">
+                        <div>
+                            <div *ngIf="courseConclued; else other_content">
+                                <img class="sinalImage" src="./assets/positiveImage.png" alt="Yes">
+                            </div>
+                            <ng-template #other_content><img class="sinalImage" src="./assets/negativeImage.png"
+                                    alt="No"></ng-template>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </section>
