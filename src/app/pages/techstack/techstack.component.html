@@ -96,7 +96,8 @@
                     <td>{{course.courseInstitution}}</td>
                     <td class="center">{{course.courseHours}}</td>
                     <td class="center">{{course.courseDate | date: 'dd/MM/yyyy'}}</td>
-                    <td class="center">
+                    <td class="center">{{course.courseConclued}}</td>
+                    <!-- <td class="center">
                         <div>
                             <div (click)="concluded()"  *ngIf="isConclued; else other_content">
                                 <img class="sinalImage" src="./assets/positiveImage.png" alt="Yes">
@@ -104,7 +105,7 @@
                             <ng-template #other_content><img class="sinalImage" src="./assets/negativeImage.png"
                                     alt="No"></ng-template>
                         </div>
-                    </td>
+                    </td> -->
                 </tr>
             </tbody>
         </table>

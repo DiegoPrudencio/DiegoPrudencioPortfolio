@@ -4,5 +4,5 @@ export interface Course {
     courseInstitution: string;
     courseHours: string;
     courseDate: string;
-    courseConclued: boolean;
+    courseConclued: string;
 }
