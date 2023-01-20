@@ -13,6 +13,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { AuthGuard } from './guards/auth-guard.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -29,10 +31,12 @@ import { AuthGuard } from './guards/auth-guard.service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    CommonModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent,

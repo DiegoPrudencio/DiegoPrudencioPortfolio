@@ -18,3 +18,85 @@
     </div>
 </div>
 
+<div class="formDiv">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <!-- action="https://formspree.io/f/xpzewpwv" method="POST" -->
+        <!-- NAME FIELD -->
+        <div>
+            <label class="form-label m-0 p-0 tamanhoText" for="idName">Name:</label>
+            <input class="form-control margin inputSize" name="name" type="text" id="idName" formControlName="name">
+        </div>
+
+        <!-- NAME FIELD VALIDATION -->
+        <div *ngIf="contactForm.get('name')?.errors?.['required'] && contactForm.get('name')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+
+        <!-- PHONE NUMBER FIELD -->
+        <div>
+            <label class="form-label m-0 p-0 tamanhoText" for="idPhoneNumber">Phone number:</label>
+            <input class="form-control margin inputSize" type="text" id="idPhoneNumber" formControlName="phoneNumber"
+                placeholder="(DDD) + número">
+        </div>
+
+        <!-- PHONE NUMBER FIELD VALIDATION -->
+        <div *ngIf="contactForm.get('phoneNumber')?.errors?.['required'] && contactForm.get('phoneNumber')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+        <div *ngIf="contactForm.get('phoneNumber')?.errors?.['minlength'] && contactForm.get('phoneNumber')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Minimum length 11 characters</p>
+        </div>
+
+        <!-- EMAIL FIELD -->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idEmail">Email</label>
+            <input class="form-control margin inputSize" type="text" id="idEmail" formControlName="email">
+        </div>
+
+        <!-- EMAIL FIELD VALIDATION -->
+        <div *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+        <div *ngIf="contactForm.get('email')?.errors?.['email']"
+            class="marginValidation">
+            <p class="text-danger">This is not an email</p>
+        </div>
+
+        <!-- SUBJECT FIELD -->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idSubject">Subject:</label>
+            <input class="form-control margin inputSize" type="text" id="idSubject" formControlName="subject">
+        </div>
+
+        <!-- SUBJECT FIELD VALIDATION -->
+        <div *ngIf="contactForm.get('subject')?.errors?.['required'] && contactForm.get('subject')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+
+        <!-- TEXT FIELD-->
+        <div class="pb-1 input-group-sm">
+            <label class="form-label m-0 p-0 tamanhoText" for="idMessage">Your message here:</label>
+            <!-- <input class="form-control margin textArea" type="text" id="idMessage" formControlName="message"> -->
+            <textarea class="form-control margin" formControlName="message" id="idMessage" cols="30"
+                rows="10"></textarea>
+        </div>
+
+        <!-- TEXT FIELD VALIDATION -->
+        <div *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
+            class="marginValidation">
+            <p class="text-danger">Required field</p>
+        </div>
+        <div class="positionBtn">
+
+            <button type="submit" class="btn btn-outline-dark btn-lg" [disabled]="!contactForm.valid"
+                [class.ready]="contactForm.valid">Submit</button>
+            <!-- <button class="btn btn-outline-dark btn-lg" type="submit">Submit</button> (click)="send()" -->
+        </div>
+    </form>
+</div>
+

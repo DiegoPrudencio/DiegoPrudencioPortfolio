@@ -12,8 +12,7 @@ export class TechstackComponent implements OnInit {
   constructor(private router: Router) { }
 
   courses: Course[] = [];
-  courseConclued: boolean = true
-
+  isConclued: boolean = true
 
   ngOnInit(): void {
 
@@ -48,7 +47,7 @@ export class TechstackComponent implements OnInit {
         courseInstitution: "Digital Innovation One", 
         courseHours: '120',
         courseDate: 'august, 3, 2022',
-        courseConclued: true
+        courseConclued: false
       },
       {
         courseNumber: 6,
@@ -59,15 +58,26 @@ export class TechstackComponent implements OnInit {
         courseConclued: true
       }
     ]
+
+    this.concluded()
+
   }
 
- 
 
-  conclued() {
+  concluded() {
 
-    // if (this.courseConclued) {
-    //   this.courseConclued = this.isConcluded
-    // }
+
+    for (let i = 0; i < this.courses.length; i++) {
+      if (this.courses[i].courseConclued === true) {
+        console.log(this.courses[i].courseConclued)
+        this.isConclued = true
+        console.log(this.isConclued)
+      } else {
+        this.isConclued = false
+        console.log(this.isConclued)
+      }
+
+    }
 
     }
     
