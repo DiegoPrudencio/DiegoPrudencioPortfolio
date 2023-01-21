@@ -51,28 +51,28 @@ export class TechstackComponent implements OnInit {
       },
       {
         courseNumber: 5,
-        courseName: "ProgramAção com App Inventor", 
-        courseInstitution: "Recode", 
-        courseHours: '40',
-        courseDate: 'march, 25, 2022',
-        courseConclued: 'Concluded'
-      },
-      {
-        courseNumber: 6,
         courseName: "Santander Bootcamp Fullstack Developer", 
         courseInstitution: "Digital Innovation One", 
         courseHours: '120',
         courseDate: 'august, 3, 2022',
         courseConclued: 'Concluded'
       },
-      // {
-      //   courseNumber: 7,
-      //   courseName: "ProgramAção com App Inventor", 
-      //   courseInstitution: "Recode", 
-      //   courseHours: '40',
-      //   courseDate: 'march, 25, 2022',
-      //   courseConclued: 'Concluded'
-      // }
+      {
+        courseNumber: 6,
+        courseName: "Introdução ao HTML + CSS", 
+        courseInstitution: "Escola DNC", 
+        courseHours: '5',
+        courseDate: 'july, 22, 2022',
+        courseConclued: 'Concluded'
+      },
+      {
+        courseNumber: 7,
+        courseName: "ProgramAção com App Inventor", 
+        courseInstitution: "Recode", 
+        courseHours: '40',
+        courseDate: 'march, 25, 2022',
+        courseConclued: 'Concluded'
+      }
     ]
 
     // this.concluded()
