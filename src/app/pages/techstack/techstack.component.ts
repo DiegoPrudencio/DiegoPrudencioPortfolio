@@ -65,14 +65,14 @@ export class TechstackComponent implements OnInit {
         courseDate: 'august, 3, 2022',
         courseConclued: 'Concluded'
       },
-      {
-        courseNumber: 7,
-        courseName: "ProgramAção com App Inventor", 
-        courseInstitution: "Recode", 
-        courseHours: '40',
-        courseDate: 'march, 25, 2022',
-        courseConclued: 'Concluded'
-      }
+      // {
+      //   courseNumber: 7,
+      //   courseName: "ProgramAção com App Inventor", 
+      //   courseInstitution: "Recode", 
+      //   courseHours: '40',
+      //   courseDate: 'march, 25, 2022',
+      //   courseConclued: 'Concluded'
+      // }
     ]
 
     // this.concluded()
