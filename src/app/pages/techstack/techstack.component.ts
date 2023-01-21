@@ -18,7 +18,7 @@ export class TechstackComponent implements OnInit {
 
     this.courses = [
       {
-        courseNumber: 1,
+        courseNumber: 6,
         courseName: "Node.js", 
         courseInstitution: "Jornada do Dev",
         courseHours: '-',
@@ -26,15 +26,15 @@ export class TechstackComponent implements OnInit {
         courseConclued: 'In progress'
       },
       {
-        courseNumber: 2,
+        courseNumber: 6,
         courseName: "Banco de Dados", 
         courseInstitution: "IF Sul-Rio-Grandense",
         courseHours: '-',
         courseDate: 'january, 31, 2023',
-        courseConclued: 'In progress'
+        courseConclued: 'In progress (25%)'
       },
       {
-        courseNumber: 3,
+        courseNumber: 5,
         courseName: "Linguagem Javascript", 
         courseInstitution: "IF Sul-Rio-Grandense",
         courseHours: '20',
@@ -50,7 +50,7 @@ export class TechstackComponent implements OnInit {
         courseConclued: 'Concluded'
       },
       {
-        courseNumber: 5,
+        courseNumber: 3,
         courseName: "Santander Bootcamp Fullstack Developer", 
         courseInstitution: "Digital Innovation One", 
         courseHours: '120',
@@ -58,7 +58,7 @@ export class TechstackComponent implements OnInit {
         courseConclued: 'Concluded'
       },
       {
-        courseNumber: 6,
+        courseNumber: 2,
         courseName: "Introdução ao HTML + CSS", 
         courseInstitution: "Escola DNC", 
         courseHours: '5',
@@ -66,7 +66,7 @@ export class TechstackComponent implements OnInit {
         courseConclued: 'Concluded'
       },
       {
-        courseNumber: 7,
+        courseNumber: 1,
         courseName: "ProgramAção com App Inventor", 
         courseInstitution: "Recode", 
         courseHours: '40',
