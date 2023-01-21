@@ -18,7 +18,7 @@ export class TechstackComponent implements OnInit {
 
     this.courses = [
       {
-        courseNumber: 6,
+        courseNumber: 7,
         courseName: "Node.js", 
         courseInstitution: "Jornada do Dev",
         courseHours: '-',
