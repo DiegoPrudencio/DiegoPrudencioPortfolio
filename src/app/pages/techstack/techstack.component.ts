@@ -29,9 +29,9 @@ export class TechstackComponent implements OnInit {
         courseNumber: 6,
         courseName: "Banco de Dados", 
         courseInstitution: "IF Sul-Rio-Grandense",
-        courseHours: '-',
-        courseDate: 'january, 31, 2023',
-        courseConclued: 'In progress (75%)'
+        courseHours: '40',
+        courseDate: 'january, 23, 2023',
+        courseConclued: 'Concluded'
       },
       {
         courseNumber: 5,
