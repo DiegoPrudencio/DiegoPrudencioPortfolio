@@ -31,7 +31,7 @@ export class TechstackComponent implements OnInit {
         courseInstitution: "IF Sul-Rio-Grandense",
         courseHours: '-',
         courseDate: 'january, 31, 2023',
-        courseConclued: 'In progress (50%)'
+        courseConclued: 'In progress (75%)'
       },
       {
         courseNumber: 5,
