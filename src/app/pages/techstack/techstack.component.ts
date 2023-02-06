@@ -19,19 +19,19 @@ export class TechstackComponent implements OnInit {
     this.courses = [
       {
         courseNumber: 8,
-        courseName: "Wordpress na Prática", 
-        courseInstitution: "Rock University",
-        courseHours: '-',
-        courseDate: 'february, 06, 2023',
-        courseConclued: 'In progress'
-      },
-      {
-        courseNumber: 7,
         courseName: "Node.js", 
         courseInstitution: "Jornada do Dev",
         courseHours: '-',
         courseDate: 'january, 31, 2023',
         courseConclued: 'In progress'
+      },
+      {
+        courseNumber: 7,
+        courseName: "Wordpress na Prática", 
+        courseInstitution: "Rock University",
+        courseHours: '1',
+        courseDate: 'february, 06, 2023',
+        courseConclued: 'Concluded'
       },
       {
         courseNumber: 6,
