@@ -18,12 +18,20 @@ export class TechstackComponent implements OnInit {
 
     this.courses = [
       {
-        courseNumber: 8,
+        courseNumber: 9,
         courseName: "Node.js", 
         courseInstitution: "Jornada do Dev",
         courseHours: '-',
         courseDate: 'january, 31, 2023',
         courseConclued: 'In progress'
+      },
+      {
+        courseNumber: 8,
+        courseName: "Desenvolvedor Wordpress", 
+        courseInstitution: "Rock University",
+        courseHours: '3',
+        courseDate: 'february, 07, 2023',
+        courseConclued: 'Concluded'
       },
       {
         courseNumber: 7,
