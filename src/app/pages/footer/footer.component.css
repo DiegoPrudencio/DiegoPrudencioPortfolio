@@ -70,3 +70,11 @@ html {
     width: 18px;
     margin-right: 10px;
 }
+
+.colorTitle1:hover {
+    color: #00C0FD;
+}
+
+.colorTitle2:hover {
+    color: #7706c8;
+}

@@ -51,6 +51,11 @@ html {
     margin-left: 60px;
 }
 
+.colorTitle1:hover {
+    color: #E70FAA;
+}
+
+
 @media (max-width: 1024px) {
     .navBarScreen {
         text-align: end;

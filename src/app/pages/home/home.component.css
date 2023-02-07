@@ -152,3 +152,7 @@
 .moreOption {
     color: var(--color-content);
 }
+
+.moreOption:hover {
+    color: #7706c8;
+}
