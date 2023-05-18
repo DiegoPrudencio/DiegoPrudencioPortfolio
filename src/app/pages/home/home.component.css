@@ -48,7 +48,7 @@
 /* PRESENTATION FIELD */
 
 .divHello {
-    padding-top: 230px; 
+    padding-top: 230px;
     text-align: start;
 }
 
@@ -62,8 +62,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
+
+.name:hover {
+    background-image: linear-gradient(to bottom, #00C0FD, #E70FAA);
+}
+
 .divTextAlign {
     text-align: end;
 }
@@ -72,12 +76,17 @@
     margin-top: 150px;
     width: 400px;
     background: linear-gradient(white, white) padding-box,
-                /* linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet) border-box; */
-                linear-gradient(to bottom right, #E70FAA, #00C0FD) border-box;
-                /* linear-gradient(to bottom right, #272724, #ad8d67) border-box; */
+        /* linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet) border-box; */
+        linear-gradient(to bottom right, #E70FAA, #00C0FD) border-box;
+    /* linear-gradient(to bottom right, #272724, #ad8d67) border-box; */
     border-radius: 50em;
     border: 6px solid transparent;
 
+}
+
+.profilePhoto:hover {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom right, #00C0FD, #E70FAA) border-box;
 }
 
 /* TECH FIELD */
@@ -110,8 +119,8 @@
     border-radius: 20px;
     background-color: var(--background-box);
     -webkit-box-shadow: 9px 7px 5px rgba(211, 211, 211);
-    -moz-box-shadow:    9px 7px 5px rgba(211, 211, 211);
-    box-shadow:         9px 7px 5px rgba(211, 211, 211); 
+    -moz-box-shadow: 9px 7px 5px rgba(211, 211, 211);
+    box-shadow: 9px 7px 5px rgba(211, 211, 211);
     height: 580px;
 }
 
@@ -139,8 +148,8 @@
 }
 
 .iconLink2 {
-   margin-left: 25px;
-   margin-bottom: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
 }
 
 .divMoreOption {
