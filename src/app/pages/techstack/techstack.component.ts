@@ -22,7 +22,7 @@ export class TechstackComponent implements OnInit {
         courseName: "Node.js", 
         courseInstitution: "Jornada do Dev",
         courseHours: '-',
-        courseDate: 'january, 31, 2023',
+        courseDate: 'April, 29, 2023',
         courseConclued: 'In progress'
       },
       {
